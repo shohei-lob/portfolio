@@ -1,18 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&d/');
 :root {
-  --primary-white: #228B22;
+  --primary-green: #228B22;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255,255,,255,0)
 }
 
 body {
   font-family: 'Dela Gothic One', cursive;
 }
 /*****************Navbar*****************/
-.navbar-brand {
+.navbar-brand{
+  padding: 0;
   color: #228B22;
+
 }
 
 nav a.nav-link {
+  font-size: .8rem;
   font-weight: 500;
   letter-spacing: 0.0375rem;
   cursor: pointer;
@@ -23,7 +27,16 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-  color: var(--primary-white) !important;
+  color: var(--primary-green) !important;
+  border-top: 0.1875rem solid var(--primary-dark);
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
